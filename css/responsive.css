@@ -295,6 +295,36 @@
 
 /* -----small mobile device----- */
 
+@media  (max-width:400px){
+    .ser-title-desc h2 {
+        font-size: 22px;
+    }
+    .ser-left-desc h5 {
+        font-size: 30px;
+    }
+    .product-desc h2 {
+        font-size: 25px;
+    }
+    .com-first-desc h2 {
+        font-size: 45px;
+    }
+    .com-mid-desc h2 {
+        font-size: 70px;
+    }
+    .mid-img {
+        top: -10%;
+    }
+    .com-last-desc h2 {
+        font-size: 45px;
+    }
+    .cda-desc h2 {
+        font-size: 18px;
+    }
+    .cda-desc p{
+        font-size:14px;
+    }
+}
+
 @media  (max-width:360px){
     .main-desc p {
         font-size: 18px;

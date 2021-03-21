@@ -716,13 +716,6 @@ overflow:hidden;
     align-items: center;
 }
 
-.footer-last-item{
-    display:flex;
-    /* justify-content:space-between; */
-}
-.team-link {
-    margin-left: 130px;
-}
 .team-link p{
     color:#fff;
 }
@@ -731,8 +724,6 @@ overflow:hidden;
     margin-left:15px;
 }
 .copyright-messeage {
-    text-align: right;
-    padding-right: 150px;
     color: #fff;
 }
 .footer-img img{

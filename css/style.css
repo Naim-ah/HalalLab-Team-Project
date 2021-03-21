@@ -28,7 +28,7 @@ body{
     top: 0%;
     right: -800px;
     background: #FF782D;
-    z-index:9999;
+    z-index:9999999;
     transition:1s;
 }
 nav ul li{
@@ -39,6 +39,7 @@ nav ul li a{
     font-size: 25px;
     font-family: 'Chivo', sans-serif;
     font-weight: 700;
+    transition:1s;
 }
 nav ul li a:hover{
     color:#122025;
@@ -49,11 +50,11 @@ nav ul li a:hover{
     position: fixed;
     right: 14%;
     top: 35px;
-    z-index:9999;
+    z-index:9999999;
     cursor: pointer;
 }
 #menuBtn img{
-    width:20px;
+    width:25px;
 }
 .header-bg{
     position:absolute;
@@ -103,7 +104,7 @@ nav ul li a:hover{
     border:2px solid #596366;
     border-radius:8px;
     font-family: 'Chivo', sans-serif;
-    transition:.5s;
+    transition:1s;
 }
 .main-btn a:hover{
     background:#FF782D;
@@ -151,7 +152,10 @@ nav ul li a:hover{
 .discount-bg img{
     cursor:pointer;
 }
-.discount-bg:hover{
+.discount-single-item{
+    transition:1s;
+}
+.discount-single-item:hover{
     transform:translateY(-15px);
 }
 .discount-img{
@@ -173,6 +177,7 @@ nav ul li a:hover{
     font-size:20px;
     color:#566A73;
     font-family: 'Chivo', sans-serif;
+    transition:1s;
 }
 .discount-desc p:hover{
     color:#FF782D !important;
@@ -187,6 +192,19 @@ nav ul li a:hover{
 .feature-img img{
     transition:1s;
     width: 100%;
+}
+.featured-single-item{
+    position:relative;
+}
+.feature-tap {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    opacity:0;
+    transition:1s;
+}
+.featured-single-item:hover .feature-tap{
+    opacity:1;
 }
 .feature-img img:hover{
     transform:scale(1.3);
@@ -358,7 +376,7 @@ overflow:hidden;
 }
 .ser-btn a{
     color:#122025 !important;
-    transition:.5s;
+    transition:1s;
 }
 .ser-btn a:hover{
     background:#FF782D;
@@ -415,7 +433,7 @@ overflow:hidden;
 .product-left-img img{
     transition:1s;
 }
-.product-left-img img:hover{
+.product-col:hover .product-image {
     transform:scale(1.3);
 }
 .product-desc {
@@ -455,7 +473,7 @@ overflow:hidden;
     border:2px solid #596366;
     border-radius:8px;
     font-family: 'Chivo', sans-serif;
-    transition:.5s;
+    transition:1s;
     color:#122025 !important;
 }
 .product-btn1 a:hover{
@@ -470,7 +488,7 @@ overflow:hidden;
     border:2px solid #596366;
     border-radius:8px;
     font-family: 'Chivo', sans-serif;
-    transition:.5s;
+    transition:1s;
     color:#fff !important;
 }
 .product-btn2 a:hover{
@@ -541,6 +559,11 @@ overflow:hidden;
 }
 .mid-img img{
     max-width:100%;
+    transition:1s;
+}
+.mid-img img:hover{
+    transform:translateY(-25px);
+    /* transform:scale(1.3); */
 }
 .com-mid-desc h2{
     font-size:170px;
@@ -556,7 +579,7 @@ overflow:hidden;
     position: absolute;
     top: -38%;
     left: 12%;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .mid-first-title{
     position:relative;
@@ -722,12 +745,28 @@ overflow:hidden;
     align-items: center;
 }
 
-.team-link p{
-    color:#fff;
+.team-link a{
+    color:#fff !important;
 }
-.fa-dribbble{
+.team-link p{
+    position:relative;
+    display:inline-block;
+}
+.team-link p::before{
+    content: '';
+    position:absolute;
+    width:100%;
+    height:1px;
+    display: inline-block;
+    background:#FF782D;
+    bottom:-10px;
+    left:0;
+}
+
+.fa-dribbble-square{
     color:#EA4C89;
     margin-left:15px;
+    font-size:25px;
 }
 .copyright-messeage {
     color: #fff;

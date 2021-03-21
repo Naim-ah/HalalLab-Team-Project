@@ -295,7 +295,7 @@
 
 /* -----small mobile device----- */
 
-@media  (max-width:400px){
+@media  (max-width:411px){
     .ser-title-desc h2 {
         font-size: 22px;
     }
@@ -323,7 +323,14 @@
     .cda-desc p{
         font-size:14px;
     }
+    .no-comp-bg {
+        top: 20%;
+    }
+    #menuBtn {
+        right: 5%;
+    }
 }
+
 
 @media  (max-width:360px){
     .main-desc p {
@@ -421,7 +428,10 @@
     .origianbg img{
         max-width: 100%;
     }
-    .no-comp-bg img{
-        max-width:inherit;
+    .no-comp-bg {
+        top: 20%;
+    }
+    #menuBtn {
+        right: 5%;
     }
 }

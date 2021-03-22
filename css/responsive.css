@@ -204,8 +204,8 @@
     /* no-com-- */
     .mid-img {
         position: absolute;
-        top: -30%;
-        left: 0;
+        top: -73%;
+        left: -75px;
         z-index: -1;
     }
     .com-mid-desc h2 {
@@ -218,6 +218,15 @@
     }
     .services-title {
         padding-top: 30px;
+    }
+    .com-first-desc p {
+        margin-bottom: 100px;
+    }
+    #services-section {
+        padding: 40px 35px 200px;
+    }
+    .com-last-desc {
+        margin-top: 60px;
     }
 }
 
@@ -267,6 +276,9 @@
     }
     .cda-desc h2 {
         font-size: 23px;
+    }
+    #services-section {
+        padding: 40px 12px 200px;
     }
 
 }
@@ -328,6 +340,9 @@
     }
     #menuBtn {
         right: 5%;
+    }
+    #services-section {
+        padding: 40px 12px 200px;
     }
 }
 
@@ -433,5 +448,8 @@
     }
     #menuBtn {
         right: 5%;
+    }
+    #services-section {
+        padding: 40px 12px 200px;
     }
 }

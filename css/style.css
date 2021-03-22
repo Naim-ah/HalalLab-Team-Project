@@ -53,9 +53,26 @@ nav ul li a:hover{
     z-index:9999999;
     cursor: pointer;
 }
-#menuBtn img{
-    width:25px;
+#menuBtn.active .line:nth-child(1){
+    transform:rotate(45deg);
+    margin-bottom: 15px;
 }
+#menuBtn.active .line:nth-child(2){
+    display: none;
+}
+#menuBtn.active .line:nth-child(3){
+    transform:rotate(-45deg);
+    margin-top:-18px;
+}
+.line{
+    width:25px;
+    height: 2px;
+    background:#fff;
+    margin:5px;
+}
+/* #menuBtn img{
+    width:25px;
+} */
 .header-bg{
     position:absolute;
     top:0;
@@ -561,7 +578,7 @@ overflow:hidden;
     max-width:100%;
     transition:1s;
 }
-.mid-img img:hover{
+.middle-item:hover .mid-img img{
     transform:translateY(-25px);
     /* transform:scale(1.3); */
 }
@@ -688,7 +705,7 @@ overflow:hidden;
 .footer {
     background: #122025;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .footer-bg{
     position:absolute;

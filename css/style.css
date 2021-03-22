@@ -56,6 +56,7 @@ nav ul li a:hover{
 #menuBtn.active .line:nth-child(1){
     transform:rotate(45deg);
     margin-bottom: 15px;
+    height: 4px;
 }
 #menuBtn.active .line:nth-child(2){
     display: none;
@@ -63,6 +64,7 @@ nav ul li a:hover{
 #menuBtn.active .line:nth-child(3){
     transform:rotate(-45deg);
     margin-top:-18px;
+    height: 4px;
 }
 .line{
     width:25px;
